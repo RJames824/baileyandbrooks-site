@@ -6,10 +6,16 @@
 <title>Bailey &amp; Brooks | Human-Powered Real Estate | Ricky James, Broker</title>
 <meta name="description" content="Industrial, commercial and homes in North County San Diego. Handled by an actual person. Ricky James, Broker, DRE #01984985. 760.212.2185.">
 <meta property="og:title" content="Bailey &amp; Brooks | Human-Powered Real Estate">
-<meta property="og:description" content="Industrial, commercial and homes in North County San Diego. Handled by an actual person, before AI takes my job.">
+<meta property="og:description" content="Industrial, commercial and homes in North County San Diego. Handled by an actual person, before AI takes our job.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://www.baileyandbrooks.com/">
+<meta property="og:url" content="https://baileyandbrooks.com/">
+<meta property="og:image" content="https://baileyandbrooks.com/images/share.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Bailey &amp; Brooks logo">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="fonts/anton.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
 <style>
@@ -23,9 +29,9 @@ a{color:inherit;text-decoration:none}
 a:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
 .inner{max-width:1440px;margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
 nav{position:sticky;top:0;z-index:50;background:rgba(20,22,15,.95);backdrop-filter:blur(8px);border-bottom:1px solid rgba(149,255,0,.24);color:#fff}
-nav .inner{display:flex;justify-content:space-between;align-items:center;padding-top:20px;padding-bottom:20px}
-.mark{font-family:Anton,Impact,sans-serif;font-size:clamp(22px,2.1vw,30px);letter-spacing:.02em;text-transform:uppercase}
-.mark i{color:var(--lime);font-style:normal}
+nav .inner{display:flex;justify-content:space-between;align-items:center;padding-top:14px;padding-bottom:14px}
+.mark{display:block;line-height:0}
+.mark img{display:block;height:clamp(40px,3.9vw,56px);width:auto}
 nav ul{display:flex;gap:clamp(18px,2.6vw,38px);list-style:none;font-size:17px;font-weight:600;align-items:center;color:var(--muted)}
 nav ul a:hover{color:#fff}
 .slant{clip-path:polygon(11px 0,100% 0,calc(100% - 11px) 100%,0 100%)}
@@ -54,13 +60,17 @@ dd{color:var(--soft)}
 .shot{display:block;margin-top:40px;width:min(380px,calc(100% - 14px));height:auto;aspect-ratio:403/530;object-fit:cover;border:3px solid var(--lime);box-shadow:14px 14px 0 rgba(149,255,0,.18);background:#2a2e20}
 .name{background:var(--paper2)}
 .name .inner{display:grid;grid-template-columns:minmax(0,420px) 1fr 1fr;gap:clamp(28px,4.4vw,64px)}
+.name h2{grid-row:1/span 2}
+.name .inner{align-items:start}
 .name h3{font-size:clamp(22px,1.8vw,26px);font-weight:800;color:var(--green)}
 .name p{margin-top:10px;color:var(--soft)}
+.name .both{grid-column:2/-1;margin-top:0;font-size:clamp(18px,1.46vw,21px);color:var(--ink);max-width:760px;border-top:2px solid var(--ink);padding-top:22px}
 .dealgrid{display:grid;grid-template-columns:repeat(3,1fr);margin-top:clamp(32px,3.9vw,56px);border-top:3px solid var(--ink)}
 .deal{padding:34px;border-left:2px solid var(--ink)}
 .deal:first-child{border-left:0;padding-left:0}
 .num{font-family:Anton,Impact,sans-serif;font-size:clamp(96px,10.4vw,150px);line-height:.95}
 .deal b{display:block;font-size:clamp(19px,1.53vw,22px);margin-top:14px}
+.sf{display:block;font-size:clamp(17px,1.32vw,19px);color:var(--soft);font-weight:600;margin-top:4px}
 .tag{display:inline-block;background:var(--bg);color:var(--lime);font-weight:700;font-size:16px;padding:5px 12px;margin-top:14px}
 .contact{background:var(--lime);color:var(--bg)}
 .contact h2{font-size:min(120px,13vw);line-height:1}
@@ -68,12 +78,15 @@ dd{color:var(--soft)}
 .contact .row a{border-bottom:3px solid transparent}
 .contact .row a:hover{border-bottom-color:var(--bg)}
 footer{background:var(--bg);color:var(--muted)}
-footer .inner{padding-top:36px;padding-bottom:36px;display:flex;flex-wrap:wrap;gap:10px 32px;justify-content:space-between;font-size:clamp(17px,1.32vw,19px)}
+footer .inner{padding-top:36px;padding-bottom:36px;display:flex;flex-wrap:wrap;gap:18px 40px;justify-content:space-between;align-items:center;font-size:clamp(17px,1.32vw,19px)}
+.flogo{display:block;line-height:0}.flogo img{display:block;height:clamp(44px,4.2vw,60px);width:auto}
 footer b{font-weight:700;color:#fff}
-footer .who{display:flex;flex-wrap:wrap;gap:4px 14px}
+footer .who{display:flex;flex-wrap:wrap;gap:6px 26px;align-items:center}
 @media (max-width:900px){
   nav ul li:not(:last-child){display:none}
   .do .inner,.story .inner,.name .inner{grid-template-columns:1fr}
+  .name .both{grid-column:auto}
+  .name h2{grid-row:auto}
   .do dl div{grid-template-columns:1fr}
   .dealgrid{grid-template-columns:1fr}
   .deal,.deal:first-child{border-left:0;padding:28px 0;border-top:2px solid var(--ink)}
@@ -84,24 +97,24 @@ footer .who{display:flex;flex-wrap:wrap;gap:4px 14px}
 </style>
 </head>
 <body>
-<nav><div class="inner"><a class="mark" href="#top">Bailey <i>&amp;</i> Brooks</a><ul><li><a href="#what">What I do</a></li><li><a href="#story">My story</a></li><li><a href="#name">The name</a></li><li><a href="#deals">Recent deals</a></li><li><a class="tel slant" href="tel:+17602122185">760.212.2185</a></li></ul></div></nav>
+<nav><div class="inner"><a class="mark" href="#top"><img src="images/logo.svg" alt="Bailey &amp; Brooks" width="2740" height="582"></a><ul><li><a href="#what">What I do</a></li><li><a href="#story">My story</a></li><li><a href="#name">The name</a></li><li><a href="#deals">Recent deals</a></li><li><a class="tel slant" href="tel:+17602122185">760.212.2185</a></li></ul></div></nav>
 
 <header class="top" id="top">
 <div class="inner">
 <h1>Human-powered <em>real estate.</em></h1>
-<p class="sub">Industrial, commercial and homes in North County San Diego. Handled by an actual person, before AI takes my job.</p>
-<div class="btns"><a class="btn y slant" href="tel:+17602122185">Call 760.212.2185</a><a class="btn slant" href="#deals">See recent deals</a></div>
+<p class="sub">Industrial, commercial and homes in North County San Diego. Handled by an actual person, before AI takes our job.</p>
+<div class="btns"><a class="btn y slant" href="tel:+17602122185">Call/Text 760.212.2185</a><a class="btn slant" href="#deals">See recent deals</a></div>
 </div>
-<svg class="bldg" viewBox="0 30 1440 264" role="img" aria-label="Drawing of an industrial building with a Bailey and Brooks sign">
+<svg class="bldg" viewBox="0 30 1440 264" role="img" aria-label="Drawing of an industrial building with the Bailey and Brooks logo on it">
 <rect x="96" y="60" width="1248" height="232" fill="#1c1f15" stroke="#95FF00" stroke-width="4"/>
-<g stroke="#95FF00" stroke-width="2"><line x1="304" y1="112" x2="304" y2="292"/><line x1="512" y1="112" x2="512" y2="292"/><line x1="720" y1="112" x2="720" y2="292"/><line x1="928" y1="112" x2="928" y2="292"/><line x1="1136" y1="112" x2="1136" y2="292"/><line x1="96" y1="112" x2="1344" y2="112"/></g>
+<g stroke="#95FF00" stroke-width="2"><line x1="304" y1="126" x2="304" y2="292"/><line x1="512" y1="126" x2="512" y2="292"/><line x1="720" y1="126" x2="720" y2="292"/><line x1="928" y1="126" x2="928" y2="292"/><line x1="1136" y1="126" x2="1136" y2="292"/><line x1="96" y1="126" x2="1344" y2="126"/></g>
 <rect x="96" y="48" width="1248" height="14" fill="#95FF00"/>
 <rect x="132" y="150" width="140" height="142" fill="#00FFF3" fill-opacity=".85" stroke="#95FF00" stroke-width="4"/><line x1="202" y1="150" x2="202" y2="292" stroke="#95FF00" stroke-width="3"/><line x1="132" y1="196" x2="272" y2="196" stroke="#95FF00" stroke-width="3"/>
 <g fill="#95FF00" stroke="#14160f" stroke-width="4"><rect x="552" y="140" width="130" height="152"/><rect x="968" y="140" width="130" height="152"/></g>
 <g stroke="#14160f" stroke-width="2"><path d="M552 162h130M552 184h130M552 206h130M552 228h130M552 250h130M552 272h130M968 162h130M968 184h130M968 206h130M968 228h130M968 250h130M968 272h130"/></g>
 <g fill="#95FF00"><rect x="530" y="250" width="10" height="42"/><rect x="694" y="250" width="10" height="42"/><rect x="946" y="250" width="10" height="42"/><rect x="1110" y="250" width="10" height="42"/></g>
-<rect x="1176" y="150" width="130" height="60" fill="#00FFF3" fill-opacity=".85" stroke="#95FF00" stroke-width="4"/>
-<text x="132" y="98" font-family="Anton,Impact,sans-serif" font-size="34" letter-spacing="1" fill="#95FF00">BAILEY &amp; BROOKS</text>
+<rect x="1166" y="158" width="66" height="134" fill="#2a2e20" stroke="#95FF00" stroke-width="4"/><rect x="1179" y="172" width="40" height="36" fill="#00FFF3" fill-opacity=".85" stroke="#95FF00" stroke-width="3"/><rect x="1218" y="228" width="6" height="16" fill="#95FF00"/><rect x="1256" y="158" width="68" height="64" fill="#00FFF3" fill-opacity=".85" stroke="#95FF00" stroke-width="4"/><line x1="1290" y1="158" x2="1290" y2="222" stroke="#95FF00" stroke-width="3"/><line x1="1256" y1="190" x2="1324" y2="190" stroke="#95FF00" stroke-width="3"/><rect x="1249" y="222" width="82" height="7" fill="#95FF00"/>
+<image href="images/logo.svg" x="116" y="69" width="240" height="51"/>
 </svg>
 </header>
 
@@ -116,22 +129,24 @@ footer .who{display:flex;flex-wrap:wrap;gap:4px 14px}
 <section class="dark story" id="story"><div class="inner"><div><h2>Why I went out on my own</h2>
 <p>I spent more than ten years at Voit Real Estate Services, leasing and selling industrial buildings across North County San Diego.</p>
 <p>Day to day, I wasn't going after institutional owners or nationwide tenants. The work I enjoyed was with people who own the building their business runs out of, and with local investors.</p>
-<p>Opening my own brokerage is more in line with my motives and my values. So I did.</p></div>
+<p>Opening my own brokerage is more in line with my motives and my values.</p>
+<p>My objective is to create transparent and honest relationships throughout all transactions with the end goal of turning over keys and everyone feels like it was a fair deal.</p></div>
 <div><p class="big">Money is the reason most of us get into business. Financial freedom is what most of us are after. I want that for my family, and I want it for my clients.</p>
 <img class="shot" src="images/ricky-james.png" width="403" height="530" alt="Ricky James, Broker, Bailey &amp; Brooks"></div></div></section>
 
 <section class="name" id="name"><div class="inner"><h2>Where the name comes from</h2>
-<div><h3>David Bailey</h3><p>My motocross coach and my Ironman coach. He taught me how to prepare and how to finish.</p></div>
-<div><h3>Eric Northbrook</h3><p>My real estate mentor and my managing director for my whole career. He taught me this business.</p></div></div></section>
+<div><h3>David Bailey</h3><p>Motocross and Ironman Coach since 2004</p></div>
+<div><h3>Eric Northbrook</h3><p>Commercial Real Estate Coach and Managing Director since 2015</p></div>
+<p class="both">Both are mentors who have guided my life. Bailey &amp; Brooks is an ultimate sign of respect for these two incredible men who dedicated so much time and effort into me. With this brokerage name comes a sense of responsibility I feel cannot be misrepresented.</p></div></section>
 
 <section id="deals"><div class="inner"><h2>Recent deals I've handled</h2><div class="dealgrid">
-<div class="deal"><div class="num">3198</div><b>Lionshead Ave, Carlsbad</b><span class="tag">Purchase, owner-user</span></div>
-<div class="deal"><div class="num">340</div><b>Rancheros Dr, Suite 184, San Marcos</b><span class="tag">Sale</span></div>
-<div class="deal"><div class="num">2925</div><b>Oceanside Blvd, Suite A, Oceanside</b><span class="tag">Lease, tenant side</span></div>
+<div class="deal"><div class="num">3198</div><b>Lionshead Ave, Carlsbad</b><span class="sf">19,182 square feet</span><span class="tag">Purchase, owner-user</span></div>
+<div class="deal"><div class="num">340</div><b>Rancheros Dr, Suite 184, San Marcos</b><span class="sf">6,914 square feet</span><span class="tag">Sale</span></div>
+<div class="deal"><div class="num">2925</div><b>Oceanside Blvd, Suite A, Oceanside</b><span class="sf">2,670 square feet</span><span class="tag">Lease, tenant side</span></div>
 </div></div></section>
 
-<section class="contact" id="contact"><div class="inner"><h2>Contact me. Hassle-free.</h2><div class="row"><a href="tel:+17602122185">760.212.2185</a><a href="mailto:ricky@baileyandbrooks.com">ricky@baileyandbrooks.com</a></div></div></section>
+<section class="contact" id="contact"><div class="inner"><h2>Contact me. Hassle-free.</h2></div></section>
 
-<footer><div class="inner"><span class="who"><span><b>Bailey &amp; Brooks</b></span><span>Ricky James, Broker</span><span><b>DRE #01984985</b></span></span><a href="tel:+17602122185"><b>760.212.2185</b></a></div></footer>
+<footer><div class="inner"><a class="flogo" href="#top"><img src="images/logo.svg" alt="Bailey &amp; Brooks" width="2740" height="582"></a><span class="who"><span>Ricky James, Broker</span><span><b>DRE #01984985</b></span><a href="tel:+17602122185"><b>760.212.2185</b></a><a href="mailto:ricky@baileyandbrooks.com"><b>ricky@baileyandbrooks.com</b></a></span></div></footer>
 </body>
 </html>
