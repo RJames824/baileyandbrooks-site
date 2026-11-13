@@ -1,5 +1,5 @@
 <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Signature</title></head><body style="margin:8px;background:#ffffff">
-<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;width:460px;font-family:Arial,Helvetica,sans-serif;">
+<div id="sig"><table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;width:460px;font-family:Arial,Helvetica,sans-serif;">
 <tr><td colspan="2" style="padding:0;line-height:0"><a href="https://baileyandbrooks.com" style="text-decoration:none"><img src="https://baileyandbrooks.com/images/sig/sig-banner.png" width="460" height="80" alt="Bailey &amp; Brooks" style="display:block;border:0;width:460px;height:80px"></a></td></tr>
 <tr>
 <td width="104" style="padding:14px 14px 12px 4px;vertical-align:middle;width:104px"><img src="https://baileyandbrooks.com/images/sig/sig-headshot.png" width="90" height="90" alt="Ricky James" style="display:block;border:0;width:90px;height:90px"></td>
@@ -10,5 +10,15 @@
 <div style="font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:21px;color:#333333"><a href="https://baileyandbrooks.com" style="color:#14160F;text-decoration:none;font-weight:bold">baileyandbrooks.com</a>&nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/baileyandbrooksco/" style="text-decoration:none"><img src="https://baileyandbrooks.com/images/sig/sig-instagram.png" width="20" height="20" alt="Instagram" style="border:0;width:20px;height:20px;vertical-align:-5px"></a>&nbsp;<a href="https://www.facebook.com/baileyandbrooksco" style="text-decoration:none"><img src="https://baileyandbrooks.com/images/sig/sig-facebook.png" width="20" height="20" alt="Facebook" style="border:0;width:20px;height:20px;vertical-align:-5px"></a></div>
 </td></tr>
 <tr><td colspan="2" style="padding:0;line-height:0"><img src="https://baileyandbrooks.com/images/sig/sig-line.png" width="460" height="3" alt="" style="display:block;border:0;width:460px;height:3px"></td></tr>
-</table>
+</table></div>
+<div style="margin-top:28px"><button id="c" style="font:bold 18px Arial,Helvetica,sans-serif;background:#14160F;color:#95FF00;border:0;border-radius:10px;padding:16px 26px;width:100%;max-width:460px">Copy signature</button></div>
+<script>
+document.getElementById('c').addEventListener('click',async function(){
+ var b=this,el=document.getElementById('sig'),r=document.createRange();r.selectNodeContents(el);
+ var s=window.getSelection();s.removeAllRanges();s.addRange(r);var ok=false;
+ try{ok=document.execCommand('copy')}catch(e){}
+ if(!ok&&navigator.clipboard&&window.ClipboardItem){try{await navigator.clipboard.write([new ClipboardItem({'text/html':new Blob([el.innerHTML],{type:'text/html'}),'text/plain':new Blob([el.innerText],{type:'text/plain'})})]);ok=true}catch(e){}}
+ b.textContent=ok?'Copied! Now paste it in Settings':'Signature is selected - tap Copy';
+});
+</script>
 </body></html>
