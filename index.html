@@ -87,7 +87,72 @@ footer .inner{padding-top:36px;padding-bottom:36px;display:flex;flex-wrap:wrap;g
 .flogo{display:block;line-height:0}.flogo img{display:block;height:clamp(44px,4.2vw,60px);width:auto}
 footer b{font-weight:700;color:#fff}
 footer .who{display:flex;flex-wrap:wrap;gap:6px 26px;align-items:center}
+.help{background:var(--paper2)}
+.lede{font-size:clamp(19px,1.6vw,23px);max-width:820px;margin-top:18px;color:var(--soft)}
+.paths{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:44px}
+.path{background:#fff;border:2px solid var(--ink);padding:30px 28px 32px;box-shadow:10px 10px 0 rgba(20,22,15,.12);display:flex;flex-direction:column}
+.k{font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#3F6608}
+.path h3{font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(28px,2.4vw,34px);line-height:1.05;margin-top:10px}
+.path p{color:var(--soft);margin-top:12px;font-size:17px}
+.path .go{margin-top:auto;padding-top:22px;display:flex;flex-direction:column;gap:10px}
+.b2{display:block;width:100%;text-align:center;font:800 17px Archivo,"Segoe UI",Arial,sans-serif;padding:14px 18px;background:var(--bg);color:#fff;border:0;cursor:pointer}
+.b2.y{background:var(--lime);color:var(--bg)}
+.b2.o{background:#fff;color:var(--ink);border:2px solid var(--ink)}
+.b2:hover{filter:brightness(1.1)}
+.b2:focus-visible,.tab:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
+.cl{display:block;font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-bottom:-4px}
+.csel{width:100%;font:800 17px Archivo,"Segoe UI",Arial,sans-serif;padding:12px 12px;border:2px solid var(--ink);background:var(--lime);color:var(--ink);border-radius:0;margin-bottom:4px}
+.path .b2{font-size:16px;padding:12px 10px}
+.loop{margin-top:34px;font-size:clamp(18px,1.46vw,21px);font-weight:700;border-top:2px solid var(--ink);padding-top:22px;max-width:980px}
+.panel{margin-top:44px;border-top:3px solid var(--ink);padding-top:40px;display:grid;grid-template-columns:minmax(0,420px) 1fr;gap:clamp(28px,5.5vw,80px);scroll-margin-top:96px}
+.js .panel{display:none}.js .panel.show{display:grid}
+.panel h3{font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(34px,3.4vw,48px);line-height:1.04}
+.panel .side p{margin-top:16px;color:var(--soft)}
+.ff{display:grid;grid-template-columns:1fr 1fr;gap:16px 20px}
+.ff .w{grid-column:1/-1}
+.ff label.l,.ff legend{display:block;font-size:15px;font-weight:800;margin-bottom:6px;padding:0}
+.ff fieldset{border:0}
+.ff input[type=text],.ff textarea{width:100%;background:#fff;border:2px solid var(--ink);padding:13px 14px;font:500 17px Archivo,"Segoe UI",Arial,sans-serif;color:var(--ink);border-radius:0}
+.ff textarea{min-height:120px;resize:vertical}
+.ff input:focus,.ff textarea:focus,.f input:focus,.f select:focus{outline:3px solid var(--cyan);outline-offset:1px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{position:relative;cursor:pointer}
+.chips input{position:absolute;opacity:0;width:0;height:0}
+.chips span{display:block;border:2px solid var(--ink);padding:8px 14px;font-weight:700;font-size:16px;background:#fff}
+.chips input:checked+span{background:var(--lime)}
+.chips input:focus-visible+span{outline:3px solid var(--cyan);outline-offset:2px}
+.hp{position:absolute;left:-9999px}
+.send{display:inline-block;width:auto;padding:16px 40px}
+.priv{font-size:15px;color:var(--soft);margin-top:4px}
+.calc .lede{color:var(--muted);max-width:760px}
+.cgrid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,4vw,60px);margin-top:40px;align-items:start}
+.tabs{display:flex;gap:10px;flex-wrap:wrap}
+.tab{padding:12px 22px;font:800 17px Archivo,"Segoe UI",Arial,sans-serif;background:#2a2e20;color:#fff;border:0;cursor:pointer}
+.tab.on{background:var(--lime);color:var(--bg)}
+.lab{font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--lime);margin:26px 0 10px}
+.fld{display:grid;grid-template-columns:1fr 1fr;gap:16px 20px}
+.f label{display:block;font-size:15px;font-weight:700;color:#fff;margin-bottom:6px}
+.f input,.f select{width:100%;background:#fff;color:var(--ink);font:800 20px Archivo,"Segoe UI",Arial,sans-serif;padding:12px 14px;border:2px solid var(--lime);border-radius:0}
+.f small{display:block;margin-top:5px;font-size:14px;color:var(--muted)}
+.res{background:#1c1f15;border:2px solid var(--lime);padding:30px;box-shadow:12px 12px 0 rgba(149,255,0,.18)}
+.res .t{font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.res .big{font-family:Anton,Impact,sans-serif;font-size:clamp(60px,6vw,84px);line-height:1;color:var(--lime);margin-top:6px}
+.res .per{font-size:17px;color:#fff;font-weight:700}
+.res table{width:100%;margin-top:22px;border-collapse:collapse;font-size:17px}
+.res td{padding:9px 0;border-top:1px solid rgba(255,255,255,.16)}
+.res td:last-child{text-align:right;color:#fff;font-weight:800}
+.res .b2{margin-top:22px}
+.fine{font-size:14px;margin-top:16px;color:var(--muted)}
+.p19 .inner{display:grid;grid-template-columns:minmax(0,420px) 1fr;gap:clamp(28px,5.5vw,80px)}
+.p19 .k{display:block;margin-bottom:10px}
+.p19 p{margin-top:16px;color:var(--soft);max-width:760px}
+.p19 p.me{margin-top:0;color:var(--ink);font-weight:700;font-size:clamp(19px,1.6vw,23px);border-left:6px solid var(--lime);padding-left:18px}
+.p19 .svc{margin-top:18px}
+.p19 a.more{font-weight:800;border-bottom:3px solid var(--lime)}
+.p19 .fine{color:var(--soft)}
 @media (max-width:900px){
+  .paths,.panel,.js .panel.show,.cgrid,.p19 .inner{grid-template-columns:1fr}
+  .ff,.fld{grid-template-columns:1fr}
   nav ul{display:none}
   .do .inner,.story .inner,.name .inner{grid-template-columns:1fr}
   .name .both{grid-column:auto}
@@ -102,7 +167,7 @@ footer .who{display:flex;flex-wrap:wrap;gap:6px 26px;align-items:center}
 </style>
 </head>
 <body>
-<nav><div class="inner"><a class="mark" href="#top"><img src="images/logo.svg" alt="Bailey &amp; Brooks" width="2740" height="582"></a><ul><li><a href="#what">What I Do</a></li><li><a href="#story">My Story</a></li><li><a href="#name">The Name</a></li><li><a href="#deals">Recent Deals</a></li></ul></div></nav>
+<nav><div class="inner"><a class="mark" href="#top"><img src="images/logo.svg" alt="Bailey &amp; Brooks" width="2740" height="582"></a><ul><li><a href="#what">What I Do</a></li><li><a href="#story">My Story</a></li><li><a href="#name">The Name</a></li><li><a href="#deals">Recent Deals</a></li><li><a href="#start" style="color:var(--lime)">Start Here</a></li></ul></div></nav>
 
 <header class="top" id="top">
 <div class="inner">
@@ -155,8 +220,105 @@ footer .who{display:flex;flex-wrap:wrap;gap:6px 26px;align-items:center}
 <div class="deal"><div class="num">2925</div><b>Oceanside Blvd, Suite A, Oceanside</b><span class="sf">2,670 square feet</span><span class="tag">Lease, tenant side</span></div>
 </div></div></section>
 
+<section class="help" id="start"><div class="inner">
+<h2>No pressure. Start wherever you are.</h2>
+<p class="lede">Buying, leasing, selling or just curious. Pick the one that sounds like you today. You can always come back to the first one.</p>
+<div class="paths">
+<div class="path"><span class="k">Step 1 &nbsp;|&nbsp; I know what I want</span><h3>Tell me what you're looking for</h3><p>Give me the basics and I'll go find it. On the market, off the market, commercial or residential.</p><div class="go"><button type="button" class="b2 y slant" data-open="tell">Tell Ricky what I need</button></div></div>
+<div class="path"><span class="k">Step 2 &nbsp;|&nbsp; I'm just looking</span><h3>Look around and run the numbers</h3><p>Not ready to talk yet? No problem. Pick a county and browse what's out there, or play with the payment calculator below.</p><div class="go"><label class="cl" for="county">Pick a county</label><select id="county" class="csel"><option value="san-diego|339/CA/San-Diego-County">San Diego County</option><option value="riverside|335/CA/Riverside-County">Riverside County</option><option value="orange|332/CA/Orange-County">Orange County</option><option value="los-angeles|321/CA/Los-Angeles-County">Los Angeles County</option><option value="san-bernardino|338/CA/San-Bernardino-County">San Bernardino County</option></select><a class="b2 o" id="ln-sale" href="https://www.loopnet.com/search/commercial-real-estate/san-diego-county-ca/for-sale/" target="_blank" rel="noopener">Commercial for sale (LoopNet)</a><a class="b2 o" id="ln-lease" href="https://www.loopnet.com/search/commercial-real-estate/san-diego-county-ca/for-lease/" target="_blank" rel="noopener">Commercial for lease (LoopNet)</a><a class="b2 o" id="rf" href="https://www.redfin.com/county/339/CA/San-Diego-County" target="_blank" rel="noopener">Homes for sale (Redfin)</a><a class="b2" href="#calculator">Try the payment calculator</a></div></div>
+<div class="path"><span class="k">Step 3 &nbsp;|&nbsp; I found one</span><h3>Send me the address</h3><p>See something you like? Send me the address or the link and I'll dig into it for you. Price history, zoning, what it's really worth.</p><div class="go"><button type="button" class="b2 y slant" data-open="check">Have Ricky check into it</button></div></div>
+</div>
+<p class="loop">Still not sure about any of it? Go back to Step 1 and tell me where you're at. I'll put together a plan that fits you and handle it from the first look to the closing table.</p>
+
+<div class="panel" id="tell"><div class="side"><h3>Tell me what you're looking for</h3><p>Fill in what you know. Skip what you don't. I'll get back to you personally.</p></div>
+<form class="ff" name="looking-for" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+<input type="hidden" name="form-name" value="looking-for"><p class="hp"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+<fieldset class="w"><legend>I want to</legend><div class="chips">
+<label><input type="radio" name="i-want-to" value="Buy"><span>Buy</span></label><label><input type="radio" name="i-want-to" value="Lease"><span>Lease</span></label><label><input type="radio" name="i-want-to" value="Sell"><span>Sell</span></label><label><input type="radio" name="i-want-to" value="Invest"><span>Invest</span></label><label><input type="radio" name="i-want-to" value="Not sure yet"><span>Not sure yet</span></label></div></fieldset>
+<fieldset class="w"><legend>Type of property</legend><div class="chips">
+<label><input type="checkbox" name="property-type[]" value="Industrial"><span>Industrial</span></label><label><input type="checkbox" name="property-type[]" value="Office"><span>Office</span></label><label><input type="checkbox" name="property-type[]" value="Retail"><span>Retail</span></label><label><input type="checkbox" name="property-type[]" value="Multi-Family"><span>Multi-Family</span></label><label><input type="checkbox" name="property-type[]" value="Land"><span>Land</span></label><label><input type="checkbox" name="property-type[]" value="Residential"><span>Residential</span></label></div></fieldset>
+<div><label class="l" for="t-area">Area or city</label><input type="text" id="t-area" name="area" placeholder="Carlsbad, Oceanside, Temecula..."></div>
+<div><label class="l" for="t-budget">Budget or size (optional)</label><input type="text" id="t-budget" name="budget-or-size"></div>
+<div class="w"><label class="l" for="t-msg">Anything else I should know</label><textarea id="t-msg" name="message" placeholder="Timing, must-haves, an address you already like..."></textarea></div>
+<div><label class="l" for="t-name">Your name</label><input type="text" id="t-name" name="name" required autocomplete="name"></div>
+<div><label class="l" for="t-contact">Phone or email</label><input type="text" id="t-contact" name="phone-or-email" required></div>
+<div class="w"><button type="submit" class="b2 y slant send">Send to Ricky</button><p class="priv">This goes straight to me. No lists, no spam.</p></div>
+</form></div>
+
+<div class="panel" id="check"><div class="side"><h3>Send me the address</h3><p>Paste the address or the listing link. Tell me what you want to know and I'll dig in.</p></div>
+<form class="ff" name="check-this-property" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+<input type="hidden" name="form-name" value="check-this-property"><p class="hp"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+<div class="w"><label class="l" for="c-addr">Property address or link</label><input type="text" id="c-addr" name="address-or-link" required placeholder="123 Main St, Carlsbad or a LoopNet / Redfin link"></div>
+<div class="w"><label class="l" for="c-msg">What would you like me to check into?</label><textarea id="c-msg" name="message" placeholder="Is the price fair? What's the zoning? Can I use it for my business?"></textarea></div>
+<div><label class="l" for="c-name">Your name</label><input type="text" id="c-name" name="name" required autocomplete="name"></div>
+<div><label class="l" for="c-contact">Phone or email</label><input type="text" id="c-contact" name="phone-or-email" required></div>
+<div class="w"><button type="submit" class="b2 y slant send">Send to Ricky</button><p class="priv">This goes straight to me. No lists, no spam.</p></div>
+</form></div>
+</div></section>
+
+<section class="dark calc" id="calculator"><div class="inner">
+<h2>Payment calculator</h2>
+<p class="lede">Move the numbers around and see what a monthly payment could look like. Nobody will call you for using it.</p>
+<div class="cgrid"><div>
+<div class="lab" style="margin-top:0">Property type</div>
+<div class="tabs" id="ptype"><button type="button" class="tab slant on" data-p="c">Commercial</button><button type="button" class="tab slant" data-p="r">Residential</button></div>
+<div class="lab">Loan type</div>
+<div class="tabs" id="ltype"></div>
+<p class="fine" id="lnote" style="margin-top:10px"></p>
+<div class="lab">Your numbers</div>
+<div class="fld">
+<div class="f"><label for="k-price">Purchase price</label><input id="k-price" type="text" inputmode="numeric" value="$1,500,000"></div>
+<div class="f"><label for="k-down">Down payment (%)</label><input id="k-down" type="text" inputmode="decimal" value="10"><small>Each loan type starts at a typical amount. Change it to anything.</small></div>
+<div class="f"><label for="k-rate">Interest rate (%)</label><input id="k-rate" type="text" inputmode="decimal" value="7.00"><small>Starting rates are market averages as of November 2026. Type in the one you were quoted.</small></div>
+<div class="f"><label for="k-years">Loan length</label><select id="k-years"><option>10</option><option>15</option><option>20</option><option selected>25</option><option>30</option></select><small>Years</small></div>
+</div></div>
+<div class="res"><div class="t">Estimated monthly payment</div><div class="big" id="o-pay">$0</div><div class="per">principal and interest</div>
+<table><tr><td>Loan amount</td><td id="o-loan"></td></tr><tr><td>Down payment</td><td id="o-down"></td></tr><tr><td>Total of payments</td><td id="o-total"></td></tr></table>
+<button type="button" class="b2 y slant" id="lender">Ask Ricky to connect me with a lender</button>
+<p class="fine">Estimate only. Not a loan offer or a quote. Taxes, insurance, mortgage insurance and loan fees are not included. Your lender sets the real terms.</p></div></div>
+</div></section>
+
+<section class="p19" id="prop19"><div class="inner"><div><span class="k">Good to know</span><h2>Prop 19 could save you on property taxes</h2></div>
+<div>
+<p class="me">I used Prop 19 myself. A lot of people who qualify have never heard of it.</p>
+<p>If you own your home in California and you are 55 or older, severely disabled, or lost your home to a wildfire or natural disaster, you may be able to take your current property tax base with you when you buy your next home.</p>
+<div class="svc"><ul>
+<li>Works anywhere in California, not just in your county</li>
+<li>Can be used up to three times if you are 55+ or severely disabled</li>
+<li>The new home can cost more. Only the difference gets taxed at today's value</li>
+<li>You file the claim with the County Assessor where the new home is</li>
+</ul></div>
+<p>Thinking about a move and wondering if this fits you? Ask me. I'll walk you through how it worked for me and point you to the right forms. <a class="more" href="https://www.boe.ca.gov/pdf/pub801.pdf" target="_blank" rel="noopener">Read the state's fact sheet</a></p>
+<p class="fine">General information, not tax advice. Rules and deadlines apply. Confirm your situation with your County Assessor or a tax professional.</p>
+</div></div></section>
+
 <section class="contact" id="contact"><div class="inner"><h2>Contact me. Hassle-free.</h2></div></section>
 
 <footer><div class="inner"><a class="flogo" href="#top"><img src="images/logo.svg" alt="Bailey &amp; Brooks" width="2740" height="582"></a><span class="who"><span>Ricky James, Broker/Owner</span><span><b>CA DRE #01984985</b></span><a href="tel:+17602122185"><b>760.212.2185</b></a><a href="mailto:ricky@baileyandbrooks.com"><b>ricky@baileyandbrooks.com</b></a><a href="https://www.instagram.com/baileyandbrooksco/" target="_blank" rel="noopener"><b>Instagram</b></a><a href="https://www.facebook.com/baileyandbrooksco" target="_blank" rel="noopener"><b>Facebook</b></a></span></div></footer>
+<script>
+(function(){
+var d=document;d.documentElement.className+=' js';
+function $(i){return d.getElementById(i)}
+function open(id){['tell','check'].forEach(function(p){$(p).classList.toggle('show',p===id)});var el=$(id);el.scrollIntoView({behavior:'smooth',block:'start'});var f=el.querySelector('input[type=text],input[type=radio]');if(f)setTimeout(function(){f.focus({preventScroll:true})},500)}
+[].forEach.call(d.querySelectorAll('[data-open]'),function(b){b.addEventListener('click',function(){open(b.getAttribute('data-open'))})});
+if(location.hash==='#tell'||location.hash==='#check')open(location.hash.slice(1));
+var L={c:[['SBA 504',10,7.00,25,'SBA 504 is for a business buying the building it will operate from. The starting rate blends the bank loan and the SBA portion.'],['SBA 7(a)',10,9.75,25,'SBA 7(a) is for a business buying the building it will operate from. Rates are usually variable and move with the prime rate.'],['Conventional',25,7.25,25,'A standard bank loan. Often has a balloon payment due before the loan is fully paid off.']],
+r:[['Conventional',20,7.11,30,'A standard home loan. Less than 20% down is possible, usually with mortgage insurance.'],['FHA',3.5,6.63,30,'FHA allows as little as 3.5% down. FHA mortgage insurance is extra.'],['VA',0,6.75,30,'For eligible veterans and service members. No down payment required. The VA funding fee is extra.']]};
+var P={c:1500000,r:900000},pt='c',li=0;
+function num(v){return parseFloat(String(v).replace(/[^0-9.]/g,''))||0}
+function usd(n){return '$'+Math.round(n).toLocaleString('en-US')}
+function calc(){var price=num($('k-price').value),dp=Math.min(num($('k-down').value),100),r=num($('k-rate').value)/1200,n=num($('k-years').value)*12,down=price*dp/100,loan=price-down,m=r?loan*r/(1-Math.pow(1+r,-n)):loan/n;
+$('o-pay').textContent=usd(m);$('o-loan').textContent=usd(loan);$('o-down').textContent=usd(down);$('o-total').textContent=usd(m*n)}
+function pick(i){li=i;var x=L[pt][i];$('k-down').value=x[1];$('k-rate').value=x[2].toFixed(2);$('k-years').value=x[3];$('lnote').textContent=x[4];[].forEach.call($('ltype').children,function(b,j){b.classList.toggle('on',j===i)});calc()}
+function loans(){var h=$('ltype');h.innerHTML='';L[pt].forEach(function(x,i){var b=d.createElement('button');b.type='button';b.className='tab slant';b.textContent=x[0];b.addEventListener('click',function(){pick(i)});h.appendChild(b)});$('k-price').value=usd(P[pt]);pick(0)}
+[].forEach.call($('ptype').children,function(b){b.addEventListener('click',function(){pt=b.getAttribute('data-p');[].forEach.call($('ptype').children,function(o){o.classList.toggle('on',o===b)});loans()})});
+['k-price','k-down','k-rate','k-years'].forEach(function(i){$(i).addEventListener('input',calc);$(i).addEventListener('change',calc)});
+$('k-price').addEventListener('blur',function(){var v=num(this.value);if(v){P[pt]=v;this.value=usd(v)}});
+$('lender').addEventListener('click',function(){$('t-msg').value="I'd like to be connected with a lender. I was looking at a "+(pt==='c'?'commercial':'residential')+' '+L[pt][li][0]+' loan: '+$('k-price').value+' purchase price, '+$('k-down').value+'% down, about '+$('o-pay').textContent+' a month.';open('tell')});
+function cty(){var v=$('county').value.split('|'),u='https://www.loopnet.com/search/commercial-real-estate/'+v[0]+'-county-ca/';$('ln-sale').href=u+'for-sale/';$('ln-lease').href=u+'for-lease/';$('rf').href='https://www.redfin.com/county/'+v[1]}
+$('county').addEventListener('change',cty);cty();
+loans();
+})();
+</script>
 </body>
 </html>
